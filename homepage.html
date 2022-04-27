@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+    <head>
+<title>Cookies: An Introduction</title>
+<link rel="stylesheet" href="homepage.css">
+    </head>
+    <body>
+        <img src="untitled.png" height="90" width="1366" class="banner" />
+        <script src="navMenu.js"></script>
+        <div id="navMenu" class="navMenu">
+            <button class="closebtn" onclick="closeNav()">Close Sidebar</button>
+            <ul>
+            <li><a href="homepage.html">Introduction</a></li>
+            <li><a href="cookies_technical.html">Technical Information</a></li>
+            <li><a href="stolen_cookies.html">Protecting Against Malice</a></li>
+            <li><a href="sources.html">Sources, etc.</a></li>
+            </ul>
+        </div>
+        <div id="main">
+            <button class="openBtn" onclick="openNav()">⮞ Open Sidebar</button>
+            <h1>Time for cookies! Sadly, not the edible ones.</h1>
+        <img src="Screenshot_6.png" height="197" width="701" />
+        <p class="caption">Image: The Guardian</p>
+        <p> So it seems that every online news site, game repository, and even discussion forum is asking if you want to accept or reject their cookies. But what are they? And in the current age of online personas stealing or leaking information, are they safe to accept?
+        </p> <p>You know your mother always told you to be suspicious of strangers offering you candy...</p>
+<h2>What are internet cookies, and how do they relate to personal privacy?</h2>
+<ul>
+    <li>Cookies are strings of text (not code) that are stored in your browser</li>
+    <li>They are sent to you by websites and are used to remember information about your previous visits</li>
+    <li>This information can include things like your login status, recent searches, engagement, and language preferences</li>
+    <li>Cookies can 'follow' you across multiple websites if they all use the same cookie (typically from a big data collector i.e. Google)</li>
+    <li>Some cookies store an anonymous ID that can link them to your device or account, but not necessarily to you</li>
+    <li>Most websites use completely harmless cookies that are necessary for the site to be useful</li>
+</ul>
+<h2>The quick and dirty answer to why so many websites ask you to accept cookies is this: they are legally required to.</h2>
+<p>The EU passed the GDPR (General Data Protection Regulation) in May of 2018, which stipulated that end users must consent to their personal data being collected. Cookies, as they contain information about a user's (presumably private-life) activity, is considered personal data under the GDPR. Even for websites based outside the EU, they figured that it was much better to be safe than sorry as other jurisdictions, including the state of California, start to pass similar legislation as well.</p>
+<p>Most websites work (or work best) when the user accepts cookies, which is why websites are always trying to get you to accept their cookies. Remember, though, that most websites offer you the option to only accept essential cookies.
+</p>
+<img src="Screenshot_2.png" height="500" width="500">
+<p class="caption">Image: StackOverflow</p>
+<p>Note the option to read their cookie policy, if you feel so inclined. Even so, most cookies are inherently harmless. There's one hidden in the button below. Try it!</p>
+<a href="cookies_technical.html">
+<button type="button" onclick = "eatCookie()">Click me to eat a cookie! I promise I don't bite.</button> <!--TODO: Include some JS that stores a cookie on this button-->
+</a>
+          </div>
+        
+    </body>
+    <script src="eatCookie.js"></script>
+</html>
