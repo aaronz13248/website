@@ -4,6 +4,16 @@
     <link rel="stylesheet" href="cookies_technical.css">
 </head>
 <body> 
+    <div id="navMenu" class="navMenu">
+        <button class="closebtn" onclick="closeNav()">Close Sidebar</button>
+        <ul>
+        <li><a href="homepage.html">Introduction</a></li>
+        <li><a href="cookies_technical.html">Technical Information</a></li>
+        <li><a href="stolen_cookies.html">Protecting Against Malice</a></li>
+        <li><a href="sources.html">Sources, etc.</a></li>
+        </ul>
+    </div>
+<div class="main">
 <h2 id="title">Remember that cookies contain no executable code. They aren't inherently evil.</h2>
 <h1 id="title2" class="hidden">Now that wasn't so bad, was it?</h1>
 <p>In the simplest terms, a cookie is a name and a value. For instance, the cookie that you (could) get from this site has the name "EATEN_COOKIE" and can have a value of 'true' or 'false'.
@@ -30,6 +40,8 @@ Most cookies are harmless. They store a bit of information, in this case, that y
 </p>
 
 <a href="stolen_cookies.html"><h2>...but third-party cookie providers selling your activity to advertisers isn't even the worst that can happen.</h2></a>
+</div>
 </body>
 <script src="eatCookie.js"></script>
+<script src="navMenu.js"></script>
 </html>
