@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
 
 #main {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -6,6 +7,12 @@
     margin-right: 300px;
     transition: 0.5s;
     margin-bottom: 100px;
+}
+
+h1.bigTitle {
+    font-size:150%;
+    font-family: 'Cinzel', serif;
+    text-align: center;
 }
 
 h1 {
@@ -55,17 +62,22 @@ img.banner {
     text-indent: 0;
 }
 
+.buttonbanner {
+    background-color:bisque;
+}
+
 .openBtn {
     position: absolute;
-    top: 0.1;
-    left: 0;
+    height:100%;
+    border:none;
+    background-color: bisque;
+    color: black;
     cursor: pointer;
-    margin-left: 0px;
-    margin-top: -25px;
+    font-size: 125%;
 }
 
 .openBtn:hover {
-    color: lightskyblue;
+    background-color: lightskyblue;
 }
 
 .navMenu a {
