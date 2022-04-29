@@ -22,12 +22,6 @@ p.caption {
     font-size: 50%;
 }
 
-img.banner {
-    position:relative;
-    margin-left: -10px;
-    margin-top: -10px;
-}
-
 .navMenu {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     width: 0px; 
@@ -62,22 +56,20 @@ img.banner {
     text-indent: 0;
 }
 
-.buttonbanner {
-    background-color:bisque;
-}
-
 .openBtn {
     position: absolute;
-    height:100%;
-    border:none;
-    background-color: bisque;
+    width:75px;
+    border: rgb(4,159,190) 2px solid;
+    background-color: white;
     color: black;
     cursor: pointer;
-    font-size: 125%;
+    margin-left:-100px;
+    transition: 0.35s;
 }
 
 .openBtn:hover {
-    background-color: lightskyblue;
+    background-color: rgb(4, 159, 190);
+    color: white;
 }
 
 .navMenu a {
