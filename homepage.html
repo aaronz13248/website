@@ -1,10 +1,9 @@
 <!DOCTYPE html>
     <head>
 <title>Cookies: An Introduction</title>
-<link rel="stylesheet" href="homepage.css">
+<link rel="stylesheet" href="main.css">
     </head>
     <body>
-        <img src="Untitled.png" height="90" width="1366" class="banner" />
         <script src="navMenu.js"></script>
         <div id="navMenu" class="navMenu">
             <button class="closebtn" onclick="closeNav()">Close Sidebar</button>
@@ -16,7 +15,7 @@
             </ul>
         </div>
         <div id="main">
-            <button class="openBtn" onclick="openNav()">⮞ Open Sidebar</button>
+            <button class="openBtn" id="openBtn" onclick="openNav()">⮞ Open Sidebar</button>
             <h1>Time for cookies! Sadly, not the edible ones.</h1>
         <img src="Screenshot_6.png" height="197" width="701" />
         <p class="caption">Image: The Guardian</p>
@@ -35,12 +34,13 @@
 <p>The EU passed the GDPR (General Data Protection Regulation) in May of 2018, which stipulated that end users must consent to their personal data being collected. Cookies, as they contain information about a user's (presumably private-life) activity, is considered personal data under the GDPR. Even for websites based outside the EU, they figured that it was much better to be safe than sorry as other jurisdictions, including the state of California, start to pass similar legislation as well.</p>
 <p>Most websites work (or work best) when the user accepts cookies, which is why websites are always trying to get you to accept their cookies. Remember, though, that most websites offer you the option to only accept essential cookies.
 </p>
-<img src="Screenshot_2.png" height="500" width="500">
+<img src="Screenshot_2.png" height="300" width="350">
 <p class="caption">Image: StackOverflow</p>
 <p>Note the option to read their cookie policy, if you feel so inclined. Even so, most cookies are inherently harmless. There's one hidden in the button below. Try it!</p>
 <a href="cookies_technical.html">
 <button type="button" onclick = "eatCookie()">Click me to eat a cookie! I promise I don't bite.</button> <!--TODO: Include some JS that stores a cookie on this button-->
 </a>
+<p class="caption">By cliking this button you automatically consent to receiving cookies from this site. User aaronz13248 on github cannot be held liable for any damages resulting from receiving cookies from this site. No cookies on this site should be legally acessed by third-party websites, except those also created by aaronz13248.</p>
           </div>
         
     </body>

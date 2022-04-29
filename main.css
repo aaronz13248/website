@@ -2,8 +2,10 @@
 
 #main {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-left: 150px;
+    margin-left: 100px;
     margin-right: 300px;
+    transition: 0.5s;
+    margin-bottom: 100px;
 }
 
 h1 {
@@ -21,17 +23,25 @@ img.banner {
 
 .navMenu {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    width: 100%; 
-    height: 0; 
+    width: 0px; 
+    height: 0px; 
     position: fixed;
     z-index: 1; 
-    top: 0.25;
+    top: 0.05;
     left: 0;
-    background-image: "url(https://images8.alphacoders.com/559/559128.jpg)";
-    background-repeat: none;
     overflow-x: hidden; 
     transition: 0.5s; 
   }
+
+.navMenu::after{
+    z-index:-1;
+    position:absolute;
+    vertical-align: center;
+    left:0;
+    top:0;
+    content: url('https://images8.alphacoders.com/559/559128.jpg');
+    opacity:0.15;
+}
 
 .navMenu ul {
     list-style: circle;
