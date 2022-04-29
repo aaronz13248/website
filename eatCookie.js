@@ -6,4 +6,5 @@ function eatCookie() {
     if (x === "ateCookie=true") {
         document.getElementById("title").classList.add("hidden");
         document.getElementById("title2").classList.remove("hidden");
+        document.getElementById("funText").classList.remove("hidden");
     }
