@@ -15,3 +15,5 @@ function openNav() {
     document.getElementById("openBtn").classList.remove("hidden");
     }, 500);
   }
+
+  openNav();

@@ -19,7 +19,7 @@ h1 {
     font-family: 'Staatliches', cursive;
 }
 p.caption {
-    font-size: 50%;
+    font-size: 60%;
 }
 
 .navMenu {
@@ -28,7 +28,7 @@ p.caption {
     height: 0px; 
     position: fixed;
     z-index: 1; 
-    top: 0.05;
+    top: 0;
     left: 0;
     overflow-x: hidden; 
     transition: 0.5s; 
@@ -72,18 +72,24 @@ button {
     color: black;
     cursor: pointer;
     margin-top: -5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .closebtn {
-    margin-left: 45px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    margin-top: 10px;
+    position: absolute;
+    left: 175px;
+    border: rgb(255, 128, 128) 2px solid;
 }
 
 button:hover {
     background-color: rgb(4, 159, 190);
     color: white;
+}
+
+.closebtn:hover {
+    background-color: rgb(255, 128, 128);
+    color:white;
 }
 
 .navMenu a {
