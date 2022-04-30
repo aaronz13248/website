@@ -10,7 +10,7 @@
 }
 
 h1.bigTitle {
-    font-size:150%;
+    font-size:200%;
     font-family: 'Cinzel', serif;
     text-align: center;
 }
@@ -56,18 +56,32 @@ p.caption {
     text-indent: 0;
 }
 
+button {
+    border: rgb(4,159,190) 2px solid;
+    background-color: white;
+    color: black;
+    transition: 0.35s;
+}
 .openBtn {
-    position: absolute;
-    width:75px;
+    position: fixed;
+    margin-left: -105px;
+    top:0.2;
+    width:100px;
     border: rgb(4,159,190) 2px solid;
     background-color: white;
     color: black;
     cursor: pointer;
-    margin-left:-100px;
-    transition: 0.35s;
+    margin-top: -5px;
 }
 
-.openBtn:hover {
+.closebtn {
+    margin-left: 45px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 10px;
+}
+
+button:hover {
     background-color: rgb(4, 159, 190);
     color: white;
 }
