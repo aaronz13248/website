@@ -64,15 +64,13 @@ button {
     transition: 0.35s;
 }
 .openBtn {
-    position: fixed;
-    margin-left: -105px;
-    top:0.2;
+    margin-top: 5px;
+    position: absolute;
     width:100px;
     border: rgb(4,159,190) 2px solid;
     background-color: white;
     color: black;
     cursor: pointer;
-    margin-top: -5px;
     padding-top: 5px;
     padding-bottom: 5px;
 }
