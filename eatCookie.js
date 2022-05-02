@@ -1,3 +1,9 @@
+/*
+Author: Aaron Zhang
+Date: May 1 2022
+Description: Handles the use of a cookie to change text on the website.
+*/
+
 function eatCookie() {
     document.cookie = "ateCookie=true; path=/";
 }

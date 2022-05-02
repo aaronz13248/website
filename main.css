@@ -1,3 +1,9 @@
+/*
+Author: Aaron Zhang
+Date: May 1 2022
+Description: Handles formatting for all pages of the website.
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
 
@@ -102,4 +108,9 @@ button:hover {
 
 .hidden{
     display: none;
+}
+
+img.whitebg {
+    border: black 1px solid;
+    padding-top: 5px;
 }

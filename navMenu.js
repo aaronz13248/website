@@ -1,3 +1,9 @@
+/*
+Author: Aaron Zhang
+Date: May 1 2022
+Description: Handles opening and closing the sidebar navigaton menu.
+*/
+
 function openNav() {
     document.getElementById("navMenu").style.height = "1500px";
     document.getElementById("navMenu").style.width = "200px";

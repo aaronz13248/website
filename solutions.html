@@ -1,7 +1,13 @@
+<!--
+Author: Aaron Zhang
+Date: May 1 2022
+Description: The page filled with suggestions for those who aren't too lazy to try them.
+-->
+
 <!DOCTYPE html>
 <head>
     <link rel="stylesheet" href="main.css">
-    <title>Cookies as Security Vulnerabilities</title>
+    <title>Patching up Vulnerabilities</title>
 </head>
 <body>
     <div id="navMenu" class="navMenu">
@@ -18,17 +24,50 @@
 
         <button class="openBtn" id="openBtn" onclick="openNav()">☰ Sitemap</button>
 
-        <h1 class="bigTitle">Protecting Your Cookies Against Malice</h1>
-        <h1>Wait, what? How does it get worse than ads scraping your cookies for targeting information?</h1>
-        <h2>Glad you asked.</h2>
-        <p>Remember that cookies are just text stored in your browser, and that websites read those cookies to make decisions.</p>
-        <p>For example, an autofill cookie contains a unique ID stored on your computer that matches with a hash on the website that will autofill your login information in the appropriate fields.</p>
-        <p>If a criminal were to intercept or read that cookie, they could set a cookie with the same name and value as your cookie, and gain access to your account without having to guess your username or password.</p>
-        <p>Because your cookies contain information about almost all your internet activity, a breach to your cookie security can have far-reaching consequences.</p>
-        <h2>Cookies, because of their simplicity, can represent the weakest link in your personal privacy.</h2>
-        <h1>So, what can you do about it? Is disabling all cookies an option?</h1>
-        <p>It is certainly possible to block all cookies from your device with cybersecurity applications or browser extensions, but this nuclear option is not recommended.</p>
-        <p>Remember that websites need some cookies to perform basic functions, and without them, some sites may not work.</p>
+        <h1 class="bigTitle">Protecting Your Perosonal Information</h1>
+        <h1>There are many possible paths of action to make sure that you're only tracked when you want to be.</h1>
+        <h2>First, there's the nuclear option. Disable ALL cookies.</h2>
+        <p>Remember that cookies are just text stored in your browser, and that websites read those cookies to make decisions. 
+            If the text is gone, then the cookies are gone. No more tracking, no more targeting ads, but also no more functionality for many sites.
+        </p>
+        <p>Cookie are used for many things, and only one of those purposes is tracking. Some websites even require you to accept cookies to keep you logged in
+            when you go from one page to the next.
+        </p>
+        <p>But if you decide that convenient browsing is not worth the risk of compromising privacy, and want all cookies gone, most browsers offer a "block all cookies" option in their privacy settings.</p>
+        <p>Click <a href="https://support.google.com/chrome/answer/95647?hl=en&co=GENIE.Platform%3DDesktop#zippy=%2Callow-or-block-cookies">here</a> to learn how to do so on Chrome.</p>
+        <h2>But wait! What about a compromise?</h2>
+        <img src="Screenshot_9.png" height="148" width="388" class="whitebg">
+        <p class="caption">Note the three options of restricting cookies.</p>
+        <p>There's an option to <b>only block third-party cookies</b>. That seems more reasonable; you get to keep functionality cookies while still blocking third-party trackers like GoogleAdServices. Neat, right?</p>
+        <h2>Wrong.</h2>
+        <p>Third-party cookies only mean cookies that are sent to your browser from another site. Clicking "Block third-party cookies" might not actually block all third-party cookies.</p>
+        <p>According to Recode by Vox, big data companies such as Facebook (okay, Meta) have created cookies such as the Meta Pixel solution that use a first-party cookie to track your activity on that site, 
+            then share that information with the advertiser's Pixel, which is basically a database of users that have seen their ads. But don't take it from them, take it from Meta:
+        </p>
+        <img src="Screenshot_10LI.png" height="333" width="874" class="whitebg">
+        <p class="caption">Taken right from <a href ="https://www.facebook.com/business/help/471978536642445" >https://www.facebook.com/business/help/471978536642445</a></p>
+        <p>Well, at least they aren't ashamed to say it.</p>
+        <h2>Now, the good news. Remember the GDPR?</h2>
+        <p>While it nominally only applies to EU companies operating in EU countries, Article 3 (Territorial Scope) of the regulation stipulates that: </p> 
+        <p style="padding-left:25px">
+            This Regulation applies to the processing of personal data of data subjects who are in the Union by a controller or processor not established in the Union, where the processing activities are related to: the offering of goods or services, irrespective of whether a payment of the data subject is required, to such data subjects in the Union
+        </p>
+        <p>As long as the site handles personal data that originated from the EU and markets to EU citizens, it has to pay attention to the GDPR.</p>
+        <p>This means most big international conglomerates need to at least pay lip service to the GDPR with opt-outs and cookie banners, but there are some specific provisions (i.e. right to refuse) that may not apply to non-EU citizens.</p>
+        <h2>Therefore, the long-term solution is to get governments worldwide to adopt GDPR-esque privacy laws.</h2>
+        <p>Ask local politicians about data regulation legislation. Contact your local MP. Look for activist groups in your local area. The hardest part of grassroots politics is getting started. 
+            At the end of the day, if you live somewhere that has elections that count for something, you can make a difference. </p>
+        <p>But you know how it is with modern politicians. They take a long time to do anything right. So what can you do to improve your privacy situation right now?</p>
+        <h2>For now, you can take advantage of the parts of the GDPR that do apply to you.</h2>
+        <img src="Screenshot_11.png" height="368" width="605" class="whitebg">
+        <p class="caption">Image: The Guardian</p>
+        <p>For example, instead of just cliking "accept all" when you see a cookie banner, you should at least click manage and/or "decline all". It's one more click, sure, but it could mean that advertisers are denied access 
+            to your browsing activity on that site. While tracking cookies can legally pretend to be first-party cookies from the browser's perspective, they can't legally pretend not to be
+            tracking cookies from the user's perspective. So until the US, Canada, and other jurisdictions get to implementing common sense cookie laws, milk the GDPR for all its worth. After all,
+            big data has been milking us for every bit of information we have, so denying them new bits one by one will be the small victories upon which life is built.
+        </p>
+        <p>You can also go to <a href="https://optout.aboutads.info/">YourAdChoices</a>, a site affiliated with the Digital Advertising Alliance, to opt out of personalized ads en masse, if 
+        doing so gives you more peace of mind.</p>
     </div>
 </body>
 <script src="navMenu.js"></script>

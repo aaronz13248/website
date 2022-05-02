@@ -1,6 +1,12 @@
+<!--
+Author: Aaron Zhang
+Date: May 1 2022
+Description: Technical information about how cookies work and what they do
+-->
+
 <!DOCTYPE html>
 <head>
-    <title>Haha get pranked</title>
+    <title>The Nitty-Gritty</title>
     <link rel="stylesheet" href="main.css">
 </head>
 <body> 
@@ -30,13 +36,21 @@
     <p>For example, this line of text wouldn't be visible if you hadn't clicked that button. The button below will remove the cookie. After clicking it, refresh the page and see this text go missing.</p>
     <button onclick="vomitCookie()">Click Me</button>
     </div>
-    <p>The purpose of a cookie varies, since they can be used to do many things. Remembering what a user did in a previous visit can have many purposes.</p>
+    <p>Possible cookies for user actions include:</p>
     <ul>
-        <li>Did the user donate to the site? If no, remind them.</li>
-        <li>Did the user sign in with this device before? If no, ask for email verification.</li>
-        <li>Did the user click a "Do not show me this again" button? If yes, don't show this pop-up.</li>
-        <li>A whole variety of personalization settings (i.e. night mode)</li>
-        <li>Is this user someone who likes (product/brand)? If yes, choose to show an ad for that product or brand.</li>
+        <li>Setting a cookie on a browser where a user signs in</li>
+        <li>Modifying a cookie value that stores how many free articles a user has left when they open another article</li>
+        <li>Setting a cookie to remember that a user clicked "Do not show again" on a reminder</li>
+        <li>Setting cookies to remember a whole variety of personalization settings when they are set (i.e. night mode)</li>
+        <li>Setting a cookie to remember that a user clicked on a specific ad, button or link</li>
+    </ul>
+    <p>Associated decisions might be:</p>
+    <ul>
+        <li>If the cookie that remembers whether a user signed in using this browser is not set, ask for email verification</li>
+        <li>If the user has no free articles left this month and they try to open another one, prompt them with a paywall</li>
+        <li>If the user clicked "Do not show again", don't show that reminder</li>
+        <li>Read the user's personalization cookies to automatically set their preferences</li>
+        <li>Display specific text, ads, etc. tailored to the user's browsing history</li>
     </ul>
     <p>Of course, the best way to know what a website uses cookies for is to read its cookie policy. Google, which is by some estimates the biggest third-party cookie provider, <a href="https://policies.google.com/technologies/cookies?hl=en-US">has its own rules of how their cookies can be used.</a></p>
     <h2>Wait, third-party cookies? What are those?</h2>
@@ -55,8 +69,7 @@
     <h2>So what's the big deal? Doesn't Google know everything anyway?</h2>
     <p>This sentiment just emphasizes how engrained cookies are in internet usage. Without cookies, it is not possible for GoogleAdServices or any other data collection service to know as much as they do about your internet activity.</p>
     <p>This kind of cookie is more sophisticated than a simple "ateCookie=true" line. Sure, everyone knows about Google being able to remember what ads you click on, but they also know which ads you moused over, and which you ignored entirely. Using this information, they can build a profile of what you may or may not be interested in and effective ways to market to you. This information can then be sold to whomever can pay for it.</p>
-    <p>Remember that the GDPR laws only apply inside the EU, and that is is merely suggested that websites elsewhere ask you for your consent to cookies. So that means you could be browsing a site, and be tagged with all your ad interaction history without your knowledge.</p>
-    <a href="stolen_cookies.html"><h2>...but even against the biggest tech giant known to man, you aren't entirely powerless.</h2></a>
+    <a href="solutions.html"><h2>...but even against the biggest tech giant known to man, you aren't entirely powerless.</h2></a>
     <p class="caption">No, I don't mean living in a cabin in the mountains or using an adblocker; those might not work, by the way...</p>
 </div>
 </body>
